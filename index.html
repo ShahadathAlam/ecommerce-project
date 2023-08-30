@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is an ecommerce project" />
+    <title>
+      TechTazkiyah: Purifying tech and intellect with Islamic values.
+    </title>
+
+    <!-- google font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn added -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css added -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar starts -->
+
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav__upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link"> Home </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="register.html" class="nav__link"> Register </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="login.html" class="nav__link"> Login </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="index.html" class="nav__link"> Logout </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link"> Contact </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              src="images/profile-pic.jpg"
+              alt="profile-picture"
+              class="profile-icon"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link nav__brand"> TechTazkiyah </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link">
+            <span> <i class="fa-solid fa-cart-shopping"></i> </span>
+            Cart 2 products - $125.00
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- navbar ends -->
+
+    <!-- header starts -->
+
+    <header class="header">
+      <div class="banner flex-space-around">
+        <marquee behavior="" direction="" class="banner__title">
+          50% Sales Going On !</marquee
+        >
+
+        <div class="features flex-space-around">
+          <article class="feature flex-center">
+            <i class="fa-solid fa-truck feature__icon"></i>
+            <h3>Shipping Within 7 Days</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-brands fa-rocketchat feature__icon"></i>
+            <h3>Support 24/7</h3>
+          </article>
+          <article class="feature flex-center">
+            <i class="fa-regular fa-credit-card feature__icon"></i>
+            <h3>Safe Payment</h3>
+          </article>
+        </div>
+      </div>
+    </header>
+
+    <!-- header ends -->
+
+    <!-- main starts -->
+
+    <main class="flex-center">
+      <div class="sidebar">
+        <section class="categories-section">
+          <h3 class="section-title">Categories</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="phone">
+                <input type="checkbox" name="phone" id="phone" value="phone" />
+                Phone
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="tablet">
+                <input
+                  type="checkbox"
+                  name="tablet"
+                  id="tablet"
+                  value="tablet"
+                />
+                Tablet
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="computer">
+                <input
+                  type="checkbox"
+                  name="computer"
+                  id="computer"
+                  value="computer"
+                />
+                Computer
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="television">
+                <input
+                  type="checkbox"
+                  name="television"
+                  id="television"
+                  value="television"
+                />
+                Television
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="refrigerator">
+                <input
+                  type="checkbox"
+                  name="refrigerator"
+                  id="refrigerator"
+                  value="refrigerator"
+                />
+                Refrigerator
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="price-section">
+          <h3 class="section-title">Price Range</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="price1">
+                <input type="radio" name="price" id="price1" value="[0,25]" />
+                $1 - $25
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price2">
+                <input type="radio" name="price" id="price2" value="[25,50]" />
+                $25 - $50
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price3">
+                <input type="radio" name="price" id="price3" value="[50,100]" />
+                $50 - $100
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price4">
+                <input
+                  type="radio"
+                  name="price"
+                  id="price4"
+                  value="[100,500]"
+                />
+                $100 - $500
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price5">
+                <input type="radio" name="price" id="price5" value="[500+]" />
+                $500+
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="shipping-section">
+          <h3 class="section-title">Shipping Options</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="free">
+                <input type="radio" name="shipping" id="free" value="free" />
+                Free Shipping
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="paid">
+                <input type="radio" name="shipping" id="paid" value="paid" />
+                Paid Shipping
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="main-content">
+        <section class="actions flex-space-around">
+          <div class="actions__sort">
+            <label for="sort">Sorted By:</label>
+            <select name="sort" id="sort">
+              <option value="selling">Most Sold Product</option>
+              <option value="rating">Most Rated Product</option>
+              <option value="view">Most Viewed Product</option>
+              <option value="arrival">Newest Product</option>
+              <option value="price">Cheapest Product</option>
+              <option value="discount">Highest Discounted Product</option>
+            </select>
+          </div>
+          <div class="actions__search">
+            <input type="text" placeholder="Search Product" />
+            <button class="btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- product section starts -->
+
+        <section class="products">
+          <article class="product card">
+            <div class="badge">
+              <span> 5 in stock </span>
+              <hr class="hr-design" />
+              <span> 3 sold </span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product1.jpg"
+              alt="product1"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot blue"></span>
+              </p>
+
+              <p class="product__description">
+                Experience the pinnacle of audio technology and sophisticated
+                design with the Sony V-4 Headphone. Elevate your listening
+                experience to a new dimension, whether ....
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$199</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 2 in stock </span>
+              <hr class="hr-design" />
+              <span> 5 sold </span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product2.jpg"
+              alt="product2"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Nubia Neovision Glass</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot blue"></span>
+              </p>
+
+              <p class="product__description">
+                Featuring 1080p Micro OLED screens for both eyes, the glasses
+                offer an astonishing 3500PPI, 1800nits peak brightness, and eye
+                protection against harmful blue light. Additionally ....
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$1999</h4>
+              <p class="product__rating">Rating: 4/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 1 in stock </span>
+              <hr class="hr-design" />
+              <span> 7 sold </span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product3.jpg"
+              alt="product3"
+            />
+            <div class="product__body">
+              <h3 class="product__name">ZTE Watch Live</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot blue"></span>
+              </p>
+
+              <p class="product__description">
+                1.3 inch HD Large Display | 21-days Battery Life | 12 Sports
+                Modes | 24/7 Heart-Rate Monitor | IP68 Waterproof and Dustproof
+                ....
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$39,90</h4>
+              <p class="product__rating">Rating: 3.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 10 in stock </span>
+              <hr class="hr-design" />
+              <span> 25 sold </span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product4.jpg"
+              alt="product4"
+            />
+            <div class="product__body">
+              <h3 class="product__name">ZTE LiveBuds</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot blue"></span>
+              </p>
+
+              <p class="product__description">
+                ENC Noise Reduction | Low Latency | Bluetooth 5.0 | Smart Touch
+                ....
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$399</h4>
+              <p class="product__rating">Rating: 4.7/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 10 in stock </span>
+              <hr class="hr-design" />
+              <span> 12 sold </span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product5.jpg"
+              alt="product5"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Blink Whole Home Bundle</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot blue"></span>
+              </p>
+
+              <p class="product__description">
+                Help protect your home inside and out with the Blink Whole Home
+                bundle featuring Video Doorbell, Outdoor, Mini, and Sync Module
+                2 ....
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$131.48</h4>
+              <p class="product__rating">Rating: 4.8/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 9 in stock </span>
+              <hr class="hr-design" />
+              <span> 1 sold </span>
+            </div>
+            <img
+              class="product__img"
+              src="images/product6.jpg"
+              alt="product6"
+            />
+            <div class="product__body">
+              <h3 class="product__name">Dreo Table Fans</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot blue"></span>
+              </p>
+
+              <p class="product__description">
+                The air circulator series introduces a new way to experience
+                comfort, bringing features that let you take full control of the
+                air, and performance to make the whole room your sweet spot ....
+                <a href="product.html" class="learn-more">Learn More</a>
+              </p>
+              <h4 class="product__price">$199</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </article>
+        </section>
+
+        <div class="pagination">
+          <button class="btn pagination__button">
+            <i class="fas fa-less-than"></i>
+          </button>
+          <button class="btn pagination__button">2</button>
+          <button class="btn pagination__button">3</button>
+          <button class="btn pagination__button">4</button>
+          <button class="btn pagination__button">5</button>
+          <button class="btn pagination__button">6</button>
+          <button class="btn pagination__button">7</button>
+          <button class="btn pagination__button">8</button>
+          <button class="btn pagination__button">9</button>
+          <button class="btn pagination__button">10</button>
+          <button class="btn pagination__button">...</button>
+          <button class="btn pagination__button">50</button>
+          <button class="btn pagination__button">
+            <i class="fas fa-greater-than"></i>
+          </button>
+        </div>
+        <!-- product section ends -->
+      </div>
+    </main>
+
+    <!-- main ends -->
+
+    <!-- footer starts -->
+
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe"> Subscribe to Newsletter: </label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          placeholder="Your Email Address"
+          class="footer__input"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+
+      <div>
+        <p>copyright &copy; 2023 TechTazkiyah. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
